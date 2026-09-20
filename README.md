@@ -6,7 +6,7 @@
 
 ## 🚀 Live Demo
 
-- **Vercel Deployment:** [Insert Your Vercel Link Here]
+- **Vercel Deployment:** [https://zenith-run.vercel.app/]
 
 ---
 
