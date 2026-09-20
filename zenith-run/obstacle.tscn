@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://bed1ce7dx2wc6"]
+
+[ext_resource type="Script" uid="uid://n0e6mtkk8rg6" path="res://obstacle.gd" id="1_sl1jc"]
+[ext_resource type="Texture2D" uid="uid://bp2y7h1b42x81" path="res://assets/FREE_Adventurer 2D Pixel Art/FREE_Adventurer 2D Pixel Art/Sprites/obstacle_platform.png" id="2_aubd6"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4vwqn"]
+size = Vector2(61, 23)
+
+[node name="obstacle" type="Area2D" unique_id=562247455]
+z_index = 10
+script = ExtResource("1_sl1jc")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=852922470]
+position = Vector2(-11.5, 4.5)
+shape = SubResource("RectangleShape2D_4vwqn")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=750309959]
+position = Vector2(-11.500002, 4.2499976)
+scale = Vector2(0.122, 0.15900001)
+texture = ExtResource("2_aubd6")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

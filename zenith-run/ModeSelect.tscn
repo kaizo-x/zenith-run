@@ -1,0 +1,61 @@
+[gd_scene format=3 uid="uid://c3hjeqcmnxias"]
+
+[ext_resource type="Script" uid="uid://baima6qsv2ar5" path="res://ModeSelect.gd" id="1_mp5lg"]
+[ext_resource type="Texture2D" uid="uid://bni53ojab6ntw" path="res://assets/FREE_Adventurer 2D Pixel Art/FREE_Adventurer 2D Pixel Art/Sprites/bg.jpg" id="2_m3qwy"]
+[ext_resource type="Texture2D" uid="uid://dkhie4pj3d66f" path="res://assets/FREE_Adventurer 2D Pixel Art/FREE_Adventurer 2D Pixel Art/Sprites/idle_right.png" id="3_58trk"]
+
+[node name="ModeSelect" type="Control" unique_id=430423068]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_mp5lg")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=544721273]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_m3qwy")
+expand_mode = 1
+
+[node name="TitleLabel" type="Label" parent="." unique_id=945684938]
+layout_mode = 0
+offset_left = 362.0
+offset_top = 151.0
+offset_right = 782.0
+offset_bottom = 217.0
+theme_override_font_sizes/font_size = 36
+text = "SELECT CONTROL MODE"
+
+[node name="KeyboardBtn" type="Button" parent="." unique_id=399875142]
+layout_mode = 0
+offset_left = 485.0
+offset_top = 225.0
+offset_right = 660.0
+offset_bottom = 283.0
+text = "KEYBOARD/TAP"
+
+[node name="AudioBtn" type="Button" parent="." unique_id=1501427592]
+layout_mode = 0
+offset_left = 484.0
+offset_top = 307.0
+offset_right = 659.0
+offset_bottom = 369.0
+text = "AUDIO INPUT"
+
+[node name="TextureRect2" type="TextureRect" parent="." unique_id=375826409]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = -27.0
+offset_top = -368.0
+offset_right = 181.0
+offset_bottom = 38.0
+grow_vertical = 0
+texture = ExtResource("3_58trk")

@@ -1,0 +1,53 @@
+[gd_scene format=3 uid="uid://c327ipjrul5uc"]
+
+[ext_resource type="Script" uid="uid://csv1ui4hoq0yy" path="res://StartMenu.gd" id="1_d3352"]
+[ext_resource type="Texture2D" uid="uid://bni53ojab6ntw" path="res://assets/FREE_Adventurer 2D Pixel Art/FREE_Adventurer 2D Pixel Art/Sprites/bg.jpg" id="2_ufv5y"]
+[ext_resource type="Texture2D" uid="uid://dkhie4pj3d66f" path="res://assets/FREE_Adventurer 2D Pixel Art/FREE_Adventurer 2D Pixel Art/Sprites/idle_right.png" id="3_0d5ky"]
+
+[node name="StartMenu" type="Control" unique_id=198626270]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_d3352")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1422911712]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_ufv5y")
+expand_mode = 1
+
+[node name="TitleLabel" type="Label" parent="." unique_id=1764609802]
+layout_mode = 0
+offset_left = 452.0
+offset_top = 155.0
+offset_right = 727.0
+offset_bottom = 219.0
+theme_override_font_sizes/font_size = 46
+text = "ZENITH RUN"
+
+[node name="StartButton" type="Button" parent="." unique_id=124028063]
+layout_mode = 0
+offset_left = 518.0
+offset_top = 282.0
+offset_right = 661.0
+offset_bottom = 339.0
+text = "START GAME"
+
+[node name="TextureRect2" type="TextureRect" parent="." unique_id=332500796]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = -27.0
+offset_top = -368.0
+offset_right = 181.0
+offset_bottom = 38.0
+grow_vertical = 0
+texture = ExtResource("3_0d5ky")
